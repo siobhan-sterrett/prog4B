@@ -1,76 +1,71 @@
 #pragma once
 
 #include <memory>
+#include <algorithm>
+#include <stdexcept>
 
 template < typename T >
 class List
 {
 public:
-	List< T >()
-	{}
-
-	List< T >( const List< T >& other ) :
-		_prev( other._prev ),
-		_next( other._next ),
-		_val ( other._val  )
-	{}
-
-	List< T >( const List< T >&& other ) :
-		_prev( other._prev ),
-		_next( other._next ),
-		_val ( other._val  )
+	List< T >() = default;
+	List< T >( const List< T >& ) = default;
+	
+	List< T >( List< T >&& other )
 	{
-		other._prev = nullptr;
-		other._next = nullptr;
-		other._val  = nullptr;
+		std::swap( _next,  other._next  );
+		std::swap( _value, other._value );
 	}
 
-	List< T >( const T& val ) :
-		_val( std::make_shared< T >( val ) )
+	List< T >( const T& value ) :
+		_value( std::make_shared< const T >( value ) )
 	{}
+	/*
+	template < typename... Args >
+	List< T > ( const T& value, Args... args ) :
+		_next( std::make_shared< const List< T > >( args... ) ),
+		_value( std::make_shared< const T >( value ) )
+	{}
+	*/
+	List< T >& operator = ( const List< T >& ) = default;
 	
-	List< T > insert_after( const T& val ) const
+	List< T >& operator = ( List< T >&& other )
 	{
-		List< T > list_copy( *this );
-		List< T > new_element( val );
-		new_element._next = list_copy._next;
-		new_element._prev = std::make_shared< list_copy >;
-		list_copy._next = std::make_shared< new_element >;
+		std::swap( _next,  other._next  );
+		std::swap( _value, other._value );
+		return *this;
+	}
+	
+	List< T > insert_after( const T& value ) const
+	{
+		List< T > newList( *this );
+		List< T > newElement( value );
 		
-		return list_copy;
+		newElement._next = _next;
+		newList._next = std::make_shared< const List< T > >( newElement );
+		
+		return newList;
 	}
 	
 	List< T > remove() const
 	{
-		if( _prev != nullptr and next != nullptr ) {
-			List< T > list_copy( *_prev );
-			list_copy._next = _next;
-			_next->_prev = _prev;
-			return list_copy;
-		} else if( _prev == nullptr and next != nullptr ) {
-			List< T > list_copy( *_next );
-			list_copy._prev = nullptr;
-			return list_copy;
-		} else if( _prev != nullptr and next == nullptr ) {
-			List< T > list_copy( *_prev );
-			list_copy._next = nullptr;
-			return list_copy;
-		} else {
-			return nullptr;
-		}
+		return *this;
 	}
 	
-	const List< T >& prev() const
+	List< T > next() const
 	{
-		return *_prev;
+		if( _next )
+			return *_next;
+		else
+			throw std::out_of_range( "" );
 	}
 	
-	const List< T >& next() const
+	const T& get_value() const
 	{
-		return *_next;
+		return *_value;
 	}
 
 private:
-	std::shared_ptr< T > _val = nullptr;
-	std::shared_ptr< List< T > > _prev = nullptr, _next = nullptr;
+	std::shared_ptr< const List< T > > _next;
+	std::shared_ptr< const T > _value;
 };
