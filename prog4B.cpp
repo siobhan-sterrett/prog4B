@@ -1,16 +1,19 @@
 #include "util.h"
 #include "FA.h"
 
+#include <cerrno>
+
 int main()
 {
 	uint8_t str[256];
 	uint8_t filename[256];
+	uint8_t number[256];
 	int c;
-	FILE* fileptr;
+	FILE* fileptr, * tempfileptr;
+	uint8_t nEntries;
 	
 	FA is_float, is_uint8_t;
 
-	is_float( 0, '+' ) = 1;
 	is_float( 0, '-' ) = 1;
 	is_float( 0, ' ' ) = 1;
 	is_float( 0, '1' ) = 2;
@@ -49,6 +52,9 @@ int main()
 	is_float( 2, '8' ) = 2;
 	is_float( 2, '9' ) = 2;
 	is_float( 2, '.' ) = 4;
+	is_float( 2, ' ' ) = 7;
+	is_float( 2, 'e' ) = 8;
+	is_float( 2, 'E' ) = 8;
 
 	is_float( 3, '.' ) = 4;
 	is_float( 3, ' ' ) = 7;
@@ -99,7 +105,6 @@ int main()
 	is_float( 7, 'E' ) = 8;
 
 	is_float( 8, ' ' ) = 9;
-	is_float( 8, '+' ) = 10;
 	is_float( 8, '-' ) = 10;
 	is_float( 8, '1' ) = 11;
 	is_float( 8, '2' ) = 11;
@@ -114,7 +119,6 @@ int main()
 
 	is_float( 9, ' ' ) = 9;
 	is_float( 9, '-' ) = 10;
-	is_float( 9, '+' ) = 10;
 
 	is_float( 10, '0' ) = 12;
 	is_float( 10, '1' ) = 11;
@@ -144,8 +148,6 @@ int main()
 	is_float.accept( 4 );
 	is_float.accept( 6 );
 	is_float.accept( 11 );
-	is_float.accept( 12 );
-	is_float.accept( 13 );
 	
 	is_uint8_t( 0, '0' ) = 1;
 	is_uint8_t( 0, '1' ) = 2;
@@ -243,10 +245,13 @@ begin :
 	
 read :
 	fileptr = pstr_fopen( filename, "r" );
-	if( fileptr == nullptr ) {
-		perror( "Error opening file for reading." );
-		exit( 1 );
-	}
+	if( fileptr == nullptr )
+		if( errno == 2 ) {
+			pstr_set( str, "File does not exist.\n" );
+			pstr_put( str, stdout );
+			errno = 0;
+			goto begin;
+		}
 	
 	c = 0;
 	for( int i = 0; i < 256; ++i ) {
@@ -260,14 +265,20 @@ read :
 		}
 	}
 	
+	fclose( fileptr );
+	
 	exit( 0 );
 
 write :
-	fileptr = pstr_fopen( filename, "w" );
-	if( fileptr == nullptr ) {
-		perror( "Error opening file for writing." );
-		exit( 1 );
+	fileptr = pstr_fopen( filename, "r" );
+	if( fileptr != nullptr ) {
+		pstr_set( str, "File already exists.\n" );
+		pstr_put( str, stdout );
+		fclose( fileptr );
+		goto begin;
 	}
+	
+	fileptr = pstr_fopen( filename, "w" );
 	
 filesize :
 	pstr_set( str, "How many entries?\n>> " );
@@ -275,13 +286,194 @@ filesize :
 	
 	pstr_getline( str, stdin );
 	
-	if( ! isPosInt( str ) ) {
+	if( ! is_uint8_t( str ) ) {
 		pstr_set( str, "Please enter a positive integer.\n" );
 		pstr_put( str, stdout );
 		goto filesize;
 	}
+	
+	nEntries = pstr_to_uint8_t( str );
+	
+	for( int i = 0; i < 256; ++i )
+		if( i < nEntries ) {
+write_number :
+			pstr_set( str, "Enter number.\n>> " );
+			pstr_put( str, stdout );
+			pstr_getline( str, stdin );
+			
+			if( ! is_float( str ) ) {
+				pstr_set( str, "Please enter a floating-point number.\n" );
+				pstr_put( str, stdout );
+				goto write_number;
+			}
+			
+			// Canonicalize
+			canonicalize( str );
+			
+			pstr_pushback( str, '\n' );
+			pstr_put( str, fileptr );
+		}
+	
+	return 0;
 
 modify :
+	fileptr = pstr_fopen( filename, "r" );
+	if( fileptr == nullptr )
+		if( errno == 2 ) {
+			pstr_set( str, "File does not exist.\n" );
+			pstr_put( str, stdout );
+			errno = 0;
+			goto begin;
+		}
+		
+	pstr_set( str, ".tempanugirqgh" );
+	tempfileptr = pstr_fopen( str, "w" );
+	
+	c = 0;
+	if( c != EOF )
+		c = getc( fileptr );
+	if( c != EOF ) {
+		ungetc( c, fileptr );
+		pstr_getline( number, fileptr );
+	}
+	
+	// Canonicalize
+	canonicalize( number );
+	
+	pstr_pushback( number, '\n' );
+	pstr_copy( str, number );
+	pstr_pushback( str, '\n' );
+	pstr_put( str, stdout );
+
+	while( true ) {
+		pstr_set( str, "[N]ext        [C]hange   [D]elete   [I]nsert\n"
+					   "[S]ave   Save [A]s       [Q]uit\n>> " );
+		pstr_put( str, stdout );
+		
+		c = getc( stdin );
+		while( getc( stdin ) != '\n' );
+		
+		switch( c ) {
+		case 'N' :
+		case 'n' :
+			pstr_put( number, tempfileptr );
+			// Fallthrough
+			
+		case 'D' :
+		case 'd' :
+			c = 0;
+			if( c != EOF )
+				c = getc( fileptr );
+			if( c != EOF ) {
+				ungetc( c, fileptr );
+				pstr_getline( number, fileptr );
+				
+				// Canonicalize
+				canonicalize( number );
+				
+				pstr_pushback( number, '\n' );
+				pstr_copy( str, number );
+				pstr_pushback( str, '\n' );
+				pstr_put( str, stdout );
+			} else {
+				pstr_set( str, "\n\n" );
+				pstr_put( str, stdout );
+			}
+			
+			break;
+			
+		case 'I' :
+		case 'i' :
+modify_insert :
+			pstr_set( str, "Enter number.\n>> " );
+			pstr_put( str, stdout );
+			pstr_getline( str, stdin );
+			
+			if( ! is_float( str ) ) {
+				pstr_set( str, "Please enter a floating-point number.\n" );
+				pstr_put( str, stdout );
+				goto modify_insert;
+			}
+			
+			pstr_put( number, tempfileptr );
+			
+			pstr_copy( number, str );
+			
+			// Canonicalize
+			canonicalize( number );
+			
+			pstr_pushback( number, '\n' );
+			pstr_copy( str, number );
+			pstr_pushback( str, '\n' );
+			pstr_put( str, stdout );
+			
+			break;
+		
+		case 'C' :
+		case 'c' :
+modify_change :
+			pstr_set( str, "Enter number.\n>> " );
+			pstr_put( str, stdout );
+			pstr_getline( str, stdin );
+			
+			if( ! is_float( str ) ) {
+				pstr_set( str, "Please enter a floating-point number.\n" );
+				pstr_put( str, stdout );
+				goto modify_change;
+			}
+			
+			pstr_copy( number, str );
+			
+			// Canonicalize
+			canonicalize( number );
+			
+			pstr_pushback( number, '\n' );
+			pstr_copy( str, number );
+			pstr_pushback( str, '\n' );
+			pstr_put( str, stdout );
+			
+			break;
+			
+		case 'A' :
+		case 'a' :
+			pstr_set( str, "Please enter filename.\n>> " );
+			pstr_put( str, stdout );
+			pstr_getline( filename, stdin );
+			// Fallthrough
+			
+		case 'S' :
+		case 's' :
+			pstr_put( number, tempfileptr );
+			c = getc( fileptr );
+			while( c != EOF ) {
+				putc( c, tempfileptr );
+				c = getc( fileptr );
+			}
+			fclose( fileptr );
+			fclose( tempfileptr );
+			
+			fileptr = pstr_fopen( filename, "w" );
+			pstr_set( str, ".tempanugirqgh" );
+			tempfileptr = pstr_fopen( str, "r" );
+			
+			c = getc( tempfileptr );
+			while( c != EOF ) {
+				putc( c, fileptr );
+				c = getc( tempfileptr );
+			}
+			
+			fclose( fileptr );
+			fclose( tempfileptr );
+			
+			exit( 0 );
+			break;
+		
+		case 'Q' :
+		case 'q' :
+			exit( 0 );
+			break;
+		}
+	}
 	
 	return 0;
 }
