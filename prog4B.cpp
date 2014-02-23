@@ -15,7 +15,6 @@ int main()
 	FA is_float, is_uint8_t;
 
 	is_float( 0, '-' ) = 1;
-	is_float( 0, ' ' ) = 1;
 	is_float( 0, '1' ) = 2;
 	is_float( 0, '2' ) = 2;
 	is_float( 0, '3' ) = 2;
@@ -119,7 +118,17 @@ int main()
 
 	is_float( 9, ' ' ) = 9;
 	is_float( 9, '-' ) = 10;
-
+	is_float( 9, '0' ) = 12;
+	is_float( 9, '1' ) = 11;
+	is_float( 9, '2' ) = 11;
+	is_float( 9, '3' ) = 11;
+	is_float( 9, '4' ) = 11;
+	is_float( 9, '5' ) = 11;
+	is_float( 9, '6' ) = 11;
+	is_float( 9, '7' ) = 11;
+	is_float( 9, '8' ) = 11;
+	is_float( 9, '9' ) = 11;
+	
 	is_float( 10, '0' ) = 12;
 	is_float( 10, '1' ) = 11;
 	is_float( 10, '2' ) = 11;
@@ -378,6 +387,7 @@ modify :
 			} else {
 				pstr_set( str, "\n\n" );
 				pstr_put( str, stdout );
+				pstr_set( number, "" );
 			}
 			
 			break;
