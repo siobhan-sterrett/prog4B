@@ -468,7 +468,7 @@ modify_change :
 			
 			fileptr = pstr_fopen( filename, "w" );
 			c_str = ".tempanugirqgh";
-			pstr_set( str, ".tempanugirqgh" );
+			pstr_set( str, c_str );
 			tempfileptr = pstr_fopen( str, "r" );
 			
 			c = getc( tempfileptr );
