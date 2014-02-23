@@ -452,7 +452,1540 @@ modify_change :
 		case 'a' :
 			pstr_set( str, "Please enter filename.\n>> " );
 			pstr_put( str, stdout );
-			pstr_getline( filename, stdin );
+			
+			c = 0;
+			*filename = 0;
+			
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
+			if( c != '\n' and c != EOF )
+				c = getc( stdin );
+			if( c != '\n' and c != EOF ) {
+				++*filename;
+				filename[*filename] = static_cast< uint8_t >( c );
+			}
 			// Fallthrough
 			
 		case 'S' :
