@@ -450,8 +450,1826 @@ modify_change :
 			
 		case 'A' :
 		case 'a' :
-			pstr_set( str, "Please enter filename.\n>> " );
-			pstr_put( str, stdout );
+			c_str[0] = 'P';
+			c_str[1] = 'l';
+			c_str[2] = 'e';
+			c_str[3] = 'a';
+			c_str[4] = 's';
+			c_str[5] = 'e';
+			c_str[6] = ' ';
+			c_str[7] = 'e';
+			c_str[8] = 'n';
+			c_str[9] = 't';
+			c_str[10] = 'e';
+			c_str[11] = 'r';
+			c_str[12] = ' ';
+			c_str[13] = 'f';
+			c_str[14] = 'i';
+			c_str[15] = 'l';
+			c_str[16] = 'e';
+			c_str[17] = 'n';
+			c_str[18] = 'a';
+			c_str[19] = 'm';
+			c_str[20] = 'e';
+			c_str[21] = '.';
+			c_str[22] = '\n';
+			c_str[23] = '>';
+			c_str[24] = '>';
+			c_str[25] = ' ';
+			c_str[26] = 0;
+			
+			good = false;
+			
+			if( c_str[0] == 0 ) {
+				str[0] = 0;
+				good = true;
+			} else str[1] = c_str[0];
+			if( good == false ) {
+				if( c_str[1] == 0 ) {
+					str[0] = 1;
+					good = true;
+				} else str[2] = c_str[1];
+			}
+			if( good == false ) {
+				if( c_str[2] == 0 ) {
+					str[0] = 2;
+					good = true;
+				} else str[3] = c_str[2];
+			}
+			if( good == false ) {
+				if( c_str[3] == 0 ) {
+					str[0] = 3;
+					good = true;
+				} else str[4] = c_str[3];
+			}
+			if( good == false ) {
+				if( c_str[4] == 0 ) {
+					str[0] = 4;
+					good = true;
+				} else str[5] = c_str[4];
+			}
+			if( good == false ) {
+				if( c_str[5] == 0 ) {
+					str[0] = 5;
+					good = true;
+				} else str[6] = c_str[5];
+			}
+			if( good == false ) {
+				if( c_str[6] == 0 ) {
+					str[0] = 6;
+					good = true;
+				} else str[7] = c_str[6];
+			}
+			if( good == false ) {
+				if( c_str[7] == 0 ) {
+					str[0] = 7;
+					good = true;
+				} else str[8] = c_str[7];
+			}
+			if( good == false ) {
+				if( c_str[8] == 0 ) {
+					str[0] = 8;
+					good = true;
+				} else str[9] = c_str[8];
+			}
+			if( good == false ) {
+				if( c_str[9] == 0 ) {
+					str[0] = 9;
+					good = true;
+				} else str[10] = c_str[9];
+			}
+			if( good == false ) {
+				if( c_str[10] == 0 ) {
+					str[0] = 10;
+					good = true;
+				} else str[11] = c_str[10];
+			}
+			if( good == false ) {
+				if( c_str[11] == 0 ) {
+					str[0] = 11;
+					good = true;
+				} else str[12] = c_str[11];
+			}
+			if( good == false ) {
+				if( c_str[12] == 0 ) {
+					str[0] = 12;
+					good = true;
+				} else str[13] = c_str[12];
+			}
+			if( good == false ) {
+				if( c_str[13] == 0 ) {
+					str[0] = 13;
+					good = true;
+				} else str[14] = c_str[13];
+			}
+			if( good == false ) {
+				if( c_str[14] == 0 ) {
+					str[0] = 14;
+					good = true;
+				} else str[15] = c_str[14];
+			}
+			if( good == false ) {
+				if( c_str[15] == 0 ) {
+					str[0] = 15;
+					good = true;
+				} else str[16] = c_str[15];
+			}
+			if( good == false ) {
+				if( c_str[16] == 0 ) {
+					str[0] = 16;
+					good = true;
+				} else str[17] = c_str[16];
+			}
+			if( good == false ) {
+				if( c_str[17] == 0 ) {
+					str[0] = 17;
+					good = true;
+				} else str[18] = c_str[17];
+			}
+			if( good == false ) {
+				if( c_str[18] == 0 ) {
+					str[0] = 18;
+					good = true;
+				} else str[19] = c_str[18];
+			}
+			if( good == false ) {
+				if( c_str[19] == 0 ) {
+					str[0] = 19;
+					good = true;
+				} else str[20] = c_str[19];
+			}
+			if( good == false ) {
+				if( c_str[20] == 0 ) {
+					str[0] = 20;
+					good = true;
+				} else str[21] = c_str[20];
+			}
+			if( good == false ) {
+				if( c_str[21] == 0 ) {
+					str[0] = 21;
+					good = true;
+				} else str[22] = c_str[21];
+			}
+			if( good == false ) {
+				if( c_str[22] == 0 ) {
+					str[0] = 22;
+					good = true;
+				} else str[23] = c_str[22];
+			}
+			if( good == false ) {
+				if( c_str[23] == 0 ) {
+					str[0] = 23;
+					good = true;
+				} else str[24] = c_str[23];
+			}
+			if( good == false ) {
+				if( c_str[24] == 0 ) {
+					str[0] = 24;
+					good = true;
+				} else str[25] = c_str[24];
+			}
+			if( good == false ) {
+				if( c_str[25] == 0 ) {
+					str[0] = 25;
+					good = true;
+				} else str[26] = c_str[25];
+			}
+			if( good == false ) {
+				if( c_str[26] == 0 ) {
+					str[0] = 26;
+					good = true;
+				} else str[27] = c_str[26];
+			}
+			if( good == false ) {
+				if( c_str[27] == 0 ) {
+					str[0] = 27;
+					good = true;
+				} else str[28] = c_str[27];
+			}
+			if( good == false ) {
+				if( c_str[28] == 0 ) {
+					str[0] = 28;
+					good = true;
+				} else str[29] = c_str[28];
+			}
+			if( good == false ) {
+				if( c_str[29] == 0 ) {
+					str[0] = 29;
+					good = true;
+				} else str[30] = c_str[29];
+			}
+			if( good == false ) {
+				if( c_str[30] == 0 ) {
+					str[0] = 30;
+					good = true;
+				} else str[31] = c_str[30];
+			}
+			if( good == false ) {
+				if( c_str[31] == 0 ) {
+					str[0] = 31;
+					good = true;
+				} else str[32] = c_str[31];
+			}
+			if( good == false ) {
+				if( c_str[32] == 0 ) {
+					str[0] = 32;
+					good = true;
+				} else str[33] = c_str[32];
+			}
+			if( good == false ) {
+				if( c_str[33] == 0 ) {
+					str[0] = 33;
+					good = true;
+				} else str[34] = c_str[33];
+			}
+			if( good == false ) {
+				if( c_str[34] == 0 ) {
+					str[0] = 34;
+					good = true;
+				} else str[35] = c_str[34];
+			}
+			if( good == false ) {
+				if( c_str[35] == 0 ) {
+					str[0] = 35;
+					good = true;
+				} else str[36] = c_str[35];
+			}
+			if( good == false ) {
+				if( c_str[36] == 0 ) {
+					str[0] = 36;
+					good = true;
+				} else str[37] = c_str[36];
+			}
+			if( good == false ) {
+				if( c_str[37] == 0 ) {
+					str[0] = 37;
+					good = true;
+				} else str[38] = c_str[37];
+			}
+			if( good == false ) {
+				if( c_str[38] == 0 ) {
+					str[0] = 38;
+					good = true;
+				} else str[39] = c_str[38];
+			}
+			if( good == false ) {
+				if( c_str[39] == 0 ) {
+					str[0] = 39;
+					good = true;
+				} else str[40] = c_str[39];
+			}
+			if( good == false ) {
+				if( c_str[40] == 0 ) {
+					str[0] = 40;
+					good = true;
+				} else str[41] = c_str[40];
+			}
+			if( good == false ) {
+				if( c_str[41] == 0 ) {
+					str[0] = 41;
+					good = true;
+				} else str[42] = c_str[41];
+			}
+			if( good == false ) {
+				if( c_str[42] == 0 ) {
+					str[0] = 42;
+					good = true;
+				} else str[43] = c_str[42];
+			}
+			if( good == false ) {
+				if( c_str[43] == 0 ) {
+					str[0] = 43;
+					good = true;
+				} else str[44] = c_str[43];
+			}
+			if( good == false ) {
+				if( c_str[44] == 0 ) {
+					str[0] = 44;
+					good = true;
+				} else str[45] = c_str[44];
+			}
+			if( good == false ) {
+				if( c_str[45] == 0 ) {
+					str[0] = 45;
+					good = true;
+				} else str[46] = c_str[45];
+			}
+			if( good == false ) {
+				if( c_str[46] == 0 ) {
+					str[0] = 46;
+					good = true;
+				} else str[47] = c_str[46];
+			}
+			if( good == false ) {
+				if( c_str[47] == 0 ) {
+					str[0] = 47;
+					good = true;
+				} else str[48] = c_str[47];
+			}
+			if( good == false ) {
+				if( c_str[48] == 0 ) {
+					str[0] = 48;
+					good = true;
+				} else str[49] = c_str[48];
+			}
+			if( good == false ) {
+				if( c_str[49] == 0 ) {
+					str[0] = 49;
+					good = true;
+				} else str[50] = c_str[49];
+			}
+			if( good == false ) {
+				if( c_str[50] == 0 ) {
+					str[0] = 50;
+					good = true;
+				} else str[51] = c_str[50];
+			}
+			if( good == false ) {
+				if( c_str[51] == 0 ) {
+					str[0] = 51;
+					good = true;
+				} else str[52] = c_str[51];
+			}
+			if( good == false ) {
+				if( c_str[52] == 0 ) {
+					str[0] = 52;
+					good = true;
+				} else str[53] = c_str[52];
+			}
+			if( good == false ) {
+				if( c_str[53] == 0 ) {
+					str[0] = 53;
+					good = true;
+				} else str[54] = c_str[53];
+			}
+			if( good == false ) {
+				if( c_str[54] == 0 ) {
+					str[0] = 54;
+					good = true;
+				} else str[55] = c_str[54];
+			}
+			if( good == false ) {
+				if( c_str[55] == 0 ) {
+					str[0] = 55;
+					good = true;
+				} else str[56] = c_str[55];
+			}
+			if( good == false ) {
+				if( c_str[56] == 0 ) {
+					str[0] = 56;
+					good = true;
+				} else str[57] = c_str[56];
+			}
+			if( good == false ) {
+				if( c_str[57] == 0 ) {
+					str[0] = 57;
+					good = true;
+				} else str[58] = c_str[57];
+			}
+			if( good == false ) {
+				if( c_str[58] == 0 ) {
+					str[0] = 58;
+					good = true;
+				} else str[59] = c_str[58];
+			}
+			if( good == false ) {
+				if( c_str[59] == 0 ) {
+					str[0] = 59;
+					good = true;
+				} else str[60] = c_str[59];
+			}
+			if( good == false ) {
+				if( c_str[60] == 0 ) {
+					str[0] = 60;
+					good = true;
+				} else str[61] = c_str[60];
+			}
+			if( good == false ) {
+				if( c_str[61] == 0 ) {
+					str[0] = 61;
+					good = true;
+				} else str[62] = c_str[61];
+			}
+			if( good == false ) {
+				if( c_str[62] == 0 ) {
+					str[0] = 62;
+					good = true;
+				} else str[63] = c_str[62];
+			}
+			if( good == false ) {
+				if( c_str[63] == 0 ) {
+					str[0] = 63;
+					good = true;
+				} else str[64] = c_str[63];
+			}
+			if( good == false ) {
+				if( c_str[64] == 0 ) {
+					str[0] = 64;
+					good = true;
+				} else str[65] = c_str[64];
+			}
+			if( good == false ) {
+				if( c_str[65] == 0 ) {
+					str[0] = 65;
+					good = true;
+				} else str[66] = c_str[65];
+			}
+			if( good == false ) {
+				if( c_str[66] == 0 ) {
+					str[0] = 66;
+					good = true;
+				} else str[67] = c_str[66];
+			}
+			if( good == false ) {
+				if( c_str[67] == 0 ) {
+					str[0] = 67;
+					good = true;
+				} else str[68] = c_str[67];
+			}
+			if( good == false ) {
+				if( c_str[68] == 0 ) {
+					str[0] = 68;
+					good = true;
+				} else str[69] = c_str[68];
+			}
+			if( good == false ) {
+				if( c_str[69] == 0 ) {
+					str[0] = 69;
+					good = true;
+				} else str[70] = c_str[69];
+			}
+			if( good == false ) {
+				if( c_str[70] == 0 ) {
+					str[0] = 70;
+					good = true;
+				} else str[71] = c_str[70];
+			}
+			if( good == false ) {
+				if( c_str[71] == 0 ) {
+					str[0] = 71;
+					good = true;
+				} else str[72] = c_str[71];
+			}
+			if( good == false ) {
+				if( c_str[72] == 0 ) {
+					str[0] = 72;
+					good = true;
+				} else str[73] = c_str[72];
+			}
+			if( good == false ) {
+				if( c_str[73] == 0 ) {
+					str[0] = 73;
+					good = true;
+				} else str[74] = c_str[73];
+			}
+			if( good == false ) {
+				if( c_str[74] == 0 ) {
+					str[0] = 74;
+					good = true;
+				} else str[75] = c_str[74];
+			}
+			if( good == false ) {
+				if( c_str[75] == 0 ) {
+					str[0] = 75;
+					good = true;
+				} else str[76] = c_str[75];
+			}
+			if( good == false ) {
+				if( c_str[76] == 0 ) {
+					str[0] = 76;
+					good = true;
+				} else str[77] = c_str[76];
+			}
+			if( good == false ) {
+				if( c_str[77] == 0 ) {
+					str[0] = 77;
+					good = true;
+				} else str[78] = c_str[77];
+			}
+			if( good == false ) {
+				if( c_str[78] == 0 ) {
+					str[0] = 78;
+					good = true;
+				} else str[79] = c_str[78];
+			}
+			if( good == false ) {
+				if( c_str[79] == 0 ) {
+					str[0] = 79;
+					good = true;
+				} else str[80] = c_str[79];
+			}
+			if( good == false ) {
+				if( c_str[80] == 0 ) {
+					str[0] = 80;
+					good = true;
+				} else str[81] = c_str[80];
+			}
+			if( good == false ) {
+				if( c_str[81] == 0 ) {
+					str[0] = 81;
+					good = true;
+				} else str[82] = c_str[81];
+			}
+			if( good == false ) {
+				if( c_str[82] == 0 ) {
+					str[0] = 82;
+					good = true;
+				} else str[83] = c_str[82];
+			}
+			if( good == false ) {
+				if( c_str[83] == 0 ) {
+					str[0] = 83;
+					good = true;
+				} else str[84] = c_str[83];
+			}
+			if( good == false ) {
+				if( c_str[84] == 0 ) {
+					str[0] = 84;
+					good = true;
+				} else str[85] = c_str[84];
+			}
+			if( good == false ) {
+				if( c_str[85] == 0 ) {
+					str[0] = 85;
+					good = true;
+				} else str[86] = c_str[85];
+			}
+			if( good == false ) {
+				if( c_str[86] == 0 ) {
+					str[0] = 86;
+					good = true;
+				} else str[87] = c_str[86];
+			}
+			if( good == false ) {
+				if( c_str[87] == 0 ) {
+					str[0] = 87;
+					good = true;
+				} else str[88] = c_str[87];
+			}
+			if( good == false ) {
+				if( c_str[88] == 0 ) {
+					str[0] = 88;
+					good = true;
+				} else str[89] = c_str[88];
+			}
+			if( good == false ) {
+				if( c_str[89] == 0 ) {
+					str[0] = 89;
+					good = true;
+				} else str[90] = c_str[89];
+			}
+			if( good == false ) {
+				if( c_str[90] == 0 ) {
+					str[0] = 90;
+					good = true;
+				} else str[91] = c_str[90];
+			}
+			if( good == false ) {
+				if( c_str[91] == 0 ) {
+					str[0] = 91;
+					good = true;
+				} else str[92] = c_str[91];
+			}
+			if( good == false ) {
+				if( c_str[92] == 0 ) {
+					str[0] = 92;
+					good = true;
+				} else str[93] = c_str[92];
+			}
+			if( good == false ) {
+				if( c_str[93] == 0 ) {
+					str[0] = 93;
+					good = true;
+				} else str[94] = c_str[93];
+			}
+			if( good == false ) {
+				if( c_str[94] == 0 ) {
+					str[0] = 94;
+					good = true;
+				} else str[95] = c_str[94];
+			}
+			if( good == false ) {
+				if( c_str[95] == 0 ) {
+					str[0] = 95;
+					good = true;
+				} else str[96] = c_str[95];
+			}
+			if( good == false ) {
+				if( c_str[96] == 0 ) {
+					str[0] = 96;
+					good = true;
+				} else str[97] = c_str[96];
+			}
+			if( good == false ) {
+				if( c_str[97] == 0 ) {
+					str[0] = 97;
+					good = true;
+				} else str[98] = c_str[97];
+			}
+			if( good == false ) {
+				if( c_str[98] == 0 ) {
+					str[0] = 98;
+					good = true;
+				} else str[99] = c_str[98];
+			}
+			if( good == false ) {
+				if( c_str[99] == 0 ) {
+					str[0] = 99;
+					good = true;
+				} else str[100] = c_str[99];
+			}
+			if( good == false ) {
+				if( c_str[100] == 0 ) {
+					str[0] = 100;
+					good = true;
+				} else str[101] = c_str[100];
+			}
+			if( good == false ) {
+				if( c_str[101] == 0 ) {
+					str[0] = 101;
+					good = true;
+				} else str[102] = c_str[101];
+			}
+			if( good == false ) {
+				if( c_str[102] == 0 ) {
+					str[0] = 102;
+					good = true;
+				} else str[103] = c_str[102];
+			}
+			if( good == false ) {
+				if( c_str[103] == 0 ) {
+					str[0] = 103;
+					good = true;
+				} else str[104] = c_str[103];
+			}
+			if( good == false ) {
+				if( c_str[104] == 0 ) {
+					str[0] = 104;
+					good = true;
+				} else str[105] = c_str[104];
+			}
+			if( good == false ) {
+				if( c_str[105] == 0 ) {
+					str[0] = 105;
+					good = true;
+				} else str[106] = c_str[105];
+			}
+			if( good == false ) {
+				if( c_str[106] == 0 ) {
+					str[0] = 106;
+					good = true;
+				} else str[107] = c_str[106];
+			}
+			if( good == false ) {
+				if( c_str[107] == 0 ) {
+					str[0] = 107;
+					good = true;
+				} else str[108] = c_str[107];
+			}
+			if( good == false ) {
+				if( c_str[108] == 0 ) {
+					str[0] = 108;
+					good = true;
+				} else str[109] = c_str[108];
+			}
+			if( good == false ) {
+				if( c_str[109] == 0 ) {
+					str[0] = 109;
+					good = true;
+				} else str[110] = c_str[109];
+			}
+			if( good == false ) {
+				if( c_str[110] == 0 ) {
+					str[0] = 110;
+					good = true;
+				} else str[111] = c_str[110];
+			}
+			if( good == false ) {
+				if( c_str[111] == 0 ) {
+					str[0] = 111;
+					good = true;
+				} else str[112] = c_str[111];
+			}
+			if( good == false ) {
+				if( c_str[112] == 0 ) {
+					str[0] = 112;
+					good = true;
+				} else str[113] = c_str[112];
+			}
+			if( good == false ) {
+				if( c_str[113] == 0 ) {
+					str[0] = 113;
+					good = true;
+				} else str[114] = c_str[113];
+			}
+			if( good == false ) {
+				if( c_str[114] == 0 ) {
+					str[0] = 114;
+					good = true;
+				} else str[115] = c_str[114];
+			}
+			if( good == false ) {
+				if( c_str[115] == 0 ) {
+					str[0] = 115;
+					good = true;
+				} else str[116] = c_str[115];
+			}
+			if( good == false ) {
+				if( c_str[116] == 0 ) {
+					str[0] = 116;
+					good = true;
+				} else str[117] = c_str[116];
+			}
+			if( good == false ) {
+				if( c_str[117] == 0 ) {
+					str[0] = 117;
+					good = true;
+				} else str[118] = c_str[117];
+			}
+			if( good == false ) {
+				if( c_str[118] == 0 ) {
+					str[0] = 118;
+					good = true;
+				} else str[119] = c_str[118];
+			}
+			if( good == false ) {
+				if( c_str[119] == 0 ) {
+					str[0] = 119;
+					good = true;
+				} else str[120] = c_str[119];
+			}
+			if( good == false ) {
+				if( c_str[120] == 0 ) {
+					str[0] = 120;
+					good = true;
+				} else str[121] = c_str[120];
+			}
+			if( good == false ) {
+				if( c_str[121] == 0 ) {
+					str[0] = 121;
+					good = true;
+				} else str[122] = c_str[121];
+			}
+			if( good == false ) {
+				if( c_str[122] == 0 ) {
+					str[0] = 122;
+					good = true;
+				} else str[123] = c_str[122];
+			}
+			if( good == false ) {
+				if( c_str[123] == 0 ) {
+					str[0] = 123;
+					good = true;
+				} else str[124] = c_str[123];
+			}
+			if( good == false ) {
+				if( c_str[124] == 0 ) {
+					str[0] = 124;
+					good = true;
+				} else str[125] = c_str[124];
+			}
+			if( good == false ) {
+				if( c_str[125] == 0 ) {
+					str[0] = 125;
+					good = true;
+				} else str[126] = c_str[125];
+			}
+			if( good == false ) {
+				if( c_str[126] == 0 ) {
+					str[0] = 126;
+					good = true;
+				} else str[127] = c_str[126];
+			}
+			if( good == false ) {
+				if( c_str[127] == 0 ) {
+					str[0] = 127;
+					good = true;
+				} else str[128] = c_str[127];
+			}
+			if( good == false ) {
+				if( c_str[128] == 0 ) {
+					str[0] = 128;
+					good = true;
+				} else str[129] = c_str[128];
+			}
+			if( good == false ) {
+				if( c_str[129] == 0 ) {
+					str[0] = 129;
+					good = true;
+				} else str[130] = c_str[129];
+			}
+			if( good == false ) {
+				if( c_str[130] == 0 ) {
+					str[0] = 130;
+					good = true;
+				} else str[131] = c_str[130];
+			}
+			if( good == false ) {
+				if( c_str[131] == 0 ) {
+					str[0] = 131;
+					good = true;
+				} else str[132] = c_str[131];
+			}
+			if( good == false ) {
+				if( c_str[132] == 0 ) {
+					str[0] = 132;
+					good = true;
+				} else str[133] = c_str[132];
+			}
+			if( good == false ) {
+				if( c_str[133] == 0 ) {
+					str[0] = 133;
+					good = true;
+				} else str[134] = c_str[133];
+			}
+			if( good == false ) {
+				if( c_str[134] == 0 ) {
+					str[0] = 134;
+					good = true;
+				} else str[135] = c_str[134];
+			}
+			if( good == false ) {
+				if( c_str[135] == 0 ) {
+					str[0] = 135;
+					good = true;
+				} else str[136] = c_str[135];
+			}
+			if( good == false ) {
+				if( c_str[136] == 0 ) {
+					str[0] = 136;
+					good = true;
+				} else str[137] = c_str[136];
+			}
+			if( good == false ) {
+				if( c_str[137] == 0 ) {
+					str[0] = 137;
+					good = true;
+				} else str[138] = c_str[137];
+			}
+			if( good == false ) {
+				if( c_str[138] == 0 ) {
+					str[0] = 138;
+					good = true;
+				} else str[139] = c_str[138];
+			}
+			if( good == false ) {
+				if( c_str[139] == 0 ) {
+					str[0] = 139;
+					good = true;
+				} else str[140] = c_str[139];
+			}
+			if( good == false ) {
+				if( c_str[140] == 0 ) {
+					str[0] = 140;
+					good = true;
+				} else str[141] = c_str[140];
+			}
+			if( good == false ) {
+				if( c_str[141] == 0 ) {
+					str[0] = 141;
+					good = true;
+				} else str[142] = c_str[141];
+			}
+			if( good == false ) {
+				if( c_str[142] == 0 ) {
+					str[0] = 142;
+					good = true;
+				} else str[143] = c_str[142];
+			}
+			if( good == false ) {
+				if( c_str[143] == 0 ) {
+					str[0] = 143;
+					good = true;
+				} else str[144] = c_str[143];
+			}
+			if( good == false ) {
+				if( c_str[144] == 0 ) {
+					str[0] = 144;
+					good = true;
+				} else str[145] = c_str[144];
+			}
+			if( good == false ) {
+				if( c_str[145] == 0 ) {
+					str[0] = 145;
+					good = true;
+				} else str[146] = c_str[145];
+			}
+			if( good == false ) {
+				if( c_str[146] == 0 ) {
+					str[0] = 146;
+					good = true;
+				} else str[147] = c_str[146];
+			}
+			if( good == false ) {
+				if( c_str[147] == 0 ) {
+					str[0] = 147;
+					good = true;
+				} else str[148] = c_str[147];
+			}
+			if( good == false ) {
+				if( c_str[148] == 0 ) {
+					str[0] = 148;
+					good = true;
+				} else str[149] = c_str[148];
+			}
+			if( good == false ) {
+				if( c_str[149] == 0 ) {
+					str[0] = 149;
+					good = true;
+				} else str[150] = c_str[149];
+			}
+			if( good == false ) {
+				if( c_str[150] == 0 ) {
+					str[0] = 150;
+					good = true;
+				} else str[151] = c_str[150];
+			}
+			if( good == false ) {
+				if( c_str[151] == 0 ) {
+					str[0] = 151;
+					good = true;
+				} else str[152] = c_str[151];
+			}
+			if( good == false ) {
+				if( c_str[152] == 0 ) {
+					str[0] = 152;
+					good = true;
+				} else str[153] = c_str[152];
+			}
+			if( good == false ) {
+				if( c_str[153] == 0 ) {
+					str[0] = 153;
+					good = true;
+				} else str[154] = c_str[153];
+			}
+			if( good == false ) {
+				if( c_str[154] == 0 ) {
+					str[0] = 154;
+					good = true;
+				} else str[155] = c_str[154];
+			}
+			if( good == false ) {
+				if( c_str[155] == 0 ) {
+					str[0] = 155;
+					good = true;
+				} else str[156] = c_str[155];
+			}
+			if( good == false ) {
+				if( c_str[156] == 0 ) {
+					str[0] = 156;
+					good = true;
+				} else str[157] = c_str[156];
+			}
+			if( good == false ) {
+				if( c_str[157] == 0 ) {
+					str[0] = 157;
+					good = true;
+				} else str[158] = c_str[157];
+			}
+			if( good == false ) {
+				if( c_str[158] == 0 ) {
+					str[0] = 158;
+					good = true;
+				} else str[159] = c_str[158];
+			}
+			if( good == false ) {
+				if( c_str[159] == 0 ) {
+					str[0] = 159;
+					good = true;
+				} else str[160] = c_str[159];
+			}
+			if( good == false ) {
+				if( c_str[160] == 0 ) {
+					str[0] = 160;
+					good = true;
+				} else str[161] = c_str[160];
+			}
+			if( good == false ) {
+				if( c_str[161] == 0 ) {
+					str[0] = 161;
+					good = true;
+				} else str[162] = c_str[161];
+			}
+			if( good == false ) {
+				if( c_str[162] == 0 ) {
+					str[0] = 162;
+					good = true;
+				} else str[163] = c_str[162];
+			}
+			if( good == false ) {
+				if( c_str[163] == 0 ) {
+					str[0] = 163;
+					good = true;
+				} else str[164] = c_str[163];
+			}
+			if( good == false ) {
+				if( c_str[164] == 0 ) {
+					str[0] = 164;
+					good = true;
+				} else str[165] = c_str[164];
+			}
+			if( good == false ) {
+				if( c_str[165] == 0 ) {
+					str[0] = 165;
+					good = true;
+				} else str[166] = c_str[165];
+			}
+			if( good == false ) {
+				if( c_str[166] == 0 ) {
+					str[0] = 166;
+					good = true;
+				} else str[167] = c_str[166];
+			}
+			if( good == false ) {
+				if( c_str[167] == 0 ) {
+					str[0] = 167;
+					good = true;
+				} else str[168] = c_str[167];
+			}
+			if( good == false ) {
+				if( c_str[168] == 0 ) {
+					str[0] = 168;
+					good = true;
+				} else str[169] = c_str[168];
+			}
+			if( good == false ) {
+				if( c_str[169] == 0 ) {
+					str[0] = 169;
+					good = true;
+				} else str[170] = c_str[169];
+			}
+			if( good == false ) {
+				if( c_str[170] == 0 ) {
+					str[0] = 170;
+					good = true;
+				} else str[171] = c_str[170];
+			}
+			if( good == false ) {
+				if( c_str[171] == 0 ) {
+					str[0] = 171;
+					good = true;
+				} else str[172] = c_str[171];
+			}
+			if( good == false ) {
+				if( c_str[172] == 0 ) {
+					str[0] = 172;
+					good = true;
+				} else str[173] = c_str[172];
+			}
+			if( good == false ) {
+				if( c_str[173] == 0 ) {
+					str[0] = 173;
+					good = true;
+				} else str[174] = c_str[173];
+			}
+			if( good == false ) {
+				if( c_str[174] == 0 ) {
+					str[0] = 174;
+					good = true;
+				} else str[175] = c_str[174];
+			}
+			if( good == false ) {
+				if( c_str[175] == 0 ) {
+					str[0] = 175;
+					good = true;
+				} else str[176] = c_str[175];
+			}
+			if( good == false ) {
+				if( c_str[176] == 0 ) {
+					str[0] = 176;
+					good = true;
+				} else str[177] = c_str[176];
+			}
+			if( good == false ) {
+				if( c_str[177] == 0 ) {
+					str[0] = 177;
+					good = true;
+				} else str[178] = c_str[177];
+			}
+			if( good == false ) {
+				if( c_str[178] == 0 ) {
+					str[0] = 178;
+					good = true;
+				} else str[179] = c_str[178];
+			}
+			if( good == false ) {
+				if( c_str[179] == 0 ) {
+					str[0] = 179;
+					good = true;
+				} else str[180] = c_str[179];
+			}
+			if( good == false ) {
+				if( c_str[180] == 0 ) {
+					str[0] = 180;
+					good = true;
+				} else str[181] = c_str[180];
+			}
+			if( good == false ) {
+				if( c_str[181] == 0 ) {
+					str[0] = 181;
+					good = true;
+				} else str[182] = c_str[181];
+			}
+			if( good == false ) {
+				if( c_str[182] == 0 ) {
+					str[0] = 182;
+					good = true;
+				} else str[183] = c_str[182];
+			}
+			if( good == false ) {
+				if( c_str[183] == 0 ) {
+					str[0] = 183;
+					good = true;
+				} else str[184] = c_str[183];
+			}
+			if( good == false ) {
+				if( c_str[184] == 0 ) {
+					str[0] = 184;
+					good = true;
+				} else str[185] = c_str[184];
+			}
+			if( good == false ) {
+				if( c_str[185] == 0 ) {
+					str[0] = 185;
+					good = true;
+				} else str[186] = c_str[185];
+			}
+			if( good == false ) {
+				if( c_str[186] == 0 ) {
+					str[0] = 186;
+					good = true;
+				} else str[187] = c_str[186];
+			}
+			if( good == false ) {
+				if( c_str[187] == 0 ) {
+					str[0] = 187;
+					good = true;
+				} else str[188] = c_str[187];
+			}
+			if( good == false ) {
+				if( c_str[188] == 0 ) {
+					str[0] = 188;
+					good = true;
+				} else str[189] = c_str[188];
+			}
+			if( good == false ) {
+				if( c_str[189] == 0 ) {
+					str[0] = 189;
+					good = true;
+				} else str[190] = c_str[189];
+			}
+			if( good == false ) {
+				if( c_str[190] == 0 ) {
+					str[0] = 190;
+					good = true;
+				} else str[191] = c_str[190];
+			}
+			if( good == false ) {
+				if( c_str[191] == 0 ) {
+					str[0] = 191;
+					good = true;
+				} else str[192] = c_str[191];
+			}
+			if( good == false ) {
+				if( c_str[192] == 0 ) {
+					str[0] = 192;
+					good = true;
+				} else str[193] = c_str[192];
+			}
+			if( good == false ) {
+				if( c_str[193] == 0 ) {
+					str[0] = 193;
+					good = true;
+				} else str[194] = c_str[193];
+			}
+			if( good == false ) {
+				if( c_str[194] == 0 ) {
+					str[0] = 194;
+					good = true;
+				} else str[195] = c_str[194];
+			}
+			if( good == false ) {
+				if( c_str[195] == 0 ) {
+					str[0] = 195;
+					good = true;
+				} else str[196] = c_str[195];
+			}
+			if( good == false ) {
+				if( c_str[196] == 0 ) {
+					str[0] = 196;
+					good = true;
+				} else str[197] = c_str[196];
+			}
+			if( good == false ) {
+				if( c_str[197] == 0 ) {
+					str[0] = 197;
+					good = true;
+				} else str[198] = c_str[197];
+			}
+			if( good == false ) {
+				if( c_str[198] == 0 ) {
+					str[0] = 198;
+					good = true;
+				} else str[199] = c_str[198];
+			}
+			if( good == false ) {
+				if( c_str[199] == 0 ) {
+					str[0] = 199;
+					good = true;
+				} else str[200] = c_str[199];
+			}
+			if( good == false ) {
+				if( c_str[200] == 0 ) {
+					str[0] = 200;
+					good = true;
+				} else str[201] = c_str[200];
+			}
+			if( good == false ) {
+				if( c_str[201] == 0 ) {
+					str[0] = 201;
+					good = true;
+				} else str[202] = c_str[201];
+			}
+			if( good == false ) {
+				if( c_str[202] == 0 ) {
+					str[0] = 202;
+					good = true;
+				} else str[203] = c_str[202];
+			}
+			if( good == false ) {
+				if( c_str[203] == 0 ) {
+					str[0] = 203;
+					good = true;
+				} else str[204] = c_str[203];
+			}
+			if( good == false ) {
+				if( c_str[204] == 0 ) {
+					str[0] = 204;
+					good = true;
+				} else str[205] = c_str[204];
+			}
+			if( good == false ) {
+				if( c_str[205] == 0 ) {
+					str[0] = 205;
+					good = true;
+				} else str[206] = c_str[205];
+			}
+			if( good == false ) {
+				if( c_str[206] == 0 ) {
+					str[0] = 206;
+					good = true;
+				} else str[207] = c_str[206];
+			}
+			if( good == false ) {
+				if( c_str[207] == 0 ) {
+					str[0] = 207;
+					good = true;
+				} else str[208] = c_str[207];
+			}
+			if( good == false ) {
+				if( c_str[208] == 0 ) {
+					str[0] = 208;
+					good = true;
+				} else str[209] = c_str[208];
+			}
+			if( good == false ) {
+				if( c_str[209] == 0 ) {
+					str[0] = 209;
+					good = true;
+				} else str[210] = c_str[209];
+			}
+			if( good == false ) {
+				if( c_str[210] == 0 ) {
+					str[0] = 210;
+					good = true;
+				} else str[211] = c_str[210];
+			}
+			if( good == false ) {
+				if( c_str[211] == 0 ) {
+					str[0] = 211;
+					good = true;
+				} else str[212] = c_str[211];
+			}
+			if( good == false ) {
+				if( c_str[212] == 0 ) {
+					str[0] = 212;
+					good = true;
+				} else str[213] = c_str[212];
+			}
+			if( good == false ) {
+				if( c_str[213] == 0 ) {
+					str[0] = 213;
+					good = true;
+				} else str[214] = c_str[213];
+			}
+			if( good == false ) {
+				if( c_str[214] == 0 ) {
+					str[0] = 214;
+					good = true;
+				} else str[215] = c_str[214];
+			}
+			if( good == false ) {
+				if( c_str[215] == 0 ) {
+					str[0] = 215;
+					good = true;
+				} else str[216] = c_str[215];
+			}
+			if( good == false ) {
+				if( c_str[216] == 0 ) {
+					str[0] = 216;
+					good = true;
+				} else str[217] = c_str[216];
+			}
+			if( good == false ) {
+				if( c_str[217] == 0 ) {
+					str[0] = 217;
+					good = true;
+				} else str[218] = c_str[217];
+			}
+			if( good == false ) {
+				if( c_str[218] == 0 ) {
+					str[0] = 218;
+					good = true;
+				} else str[219] = c_str[218];
+			}
+			if( good == false ) {
+				if( c_str[219] == 0 ) {
+					str[0] = 219;
+					good = true;
+				} else str[220] = c_str[219];
+			}
+			if( good == false ) {
+				if( c_str[220] == 0 ) {
+					str[0] = 220;
+					good = true;
+				} else str[221] = c_str[220];
+			}
+			if( good == false ) {
+				if( c_str[221] == 0 ) {
+					str[0] = 221;
+					good = true;
+				} else str[222] = c_str[221];
+			}
+			if( good == false ) {
+				if( c_str[222] == 0 ) {
+					str[0] = 222;
+					good = true;
+				} else str[223] = c_str[222];
+			}
+			if( good == false ) {
+				if( c_str[223] == 0 ) {
+					str[0] = 223;
+					good = true;
+				} else str[224] = c_str[223];
+			}
+			if( good == false ) {
+				if( c_str[224] == 0 ) {
+					str[0] = 224;
+					good = true;
+				} else str[225] = c_str[224];
+			}
+			if( good == false ) {
+				if( c_str[225] == 0 ) {
+					str[0] = 225;
+					good = true;
+				} else str[226] = c_str[225];
+			}
+			if( good == false ) {
+				if( c_str[226] == 0 ) {
+					str[0] = 226;
+					good = true;
+				} else str[227] = c_str[226];
+			}
+			if( good == false ) {
+				if( c_str[227] == 0 ) {
+					str[0] = 227;
+					good = true;
+				} else str[228] = c_str[227];
+			}
+			if( good == false ) {
+				if( c_str[228] == 0 ) {
+					str[0] = 228;
+					good = true;
+				} else str[229] = c_str[228];
+			}
+			if( good == false ) {
+				if( c_str[229] == 0 ) {
+					str[0] = 229;
+					good = true;
+				} else str[230] = c_str[229];
+			}
+			if( good == false ) {
+				if( c_str[230] == 0 ) {
+					str[0] = 230;
+					good = true;
+				} else str[231] = c_str[230];
+			}
+			if( good == false ) {
+				if( c_str[231] == 0 ) {
+					str[0] = 231;
+					good = true;
+				} else str[232] = c_str[231];
+			}
+			if( good == false ) {
+				if( c_str[232] == 0 ) {
+					str[0] = 232;
+					good = true;
+				} else str[233] = c_str[232];
+			}
+			if( good == false ) {
+				if( c_str[233] == 0 ) {
+					str[0] = 233;
+					good = true;
+				} else str[234] = c_str[233];
+			}
+			if( good == false ) {
+				if( c_str[234] == 0 ) {
+					str[0] = 234;
+					good = true;
+				} else str[235] = c_str[234];
+			}
+			if( good == false ) {
+				if( c_str[235] == 0 ) {
+					str[0] = 235;
+					good = true;
+				} else str[236] = c_str[235];
+			}
+			if( good == false ) {
+				if( c_str[236] == 0 ) {
+					str[0] = 236;
+					good = true;
+				} else str[237] = c_str[236];
+			}
+			if( good == false ) {
+				if( c_str[237] == 0 ) {
+					str[0] = 237;
+					good = true;
+				} else str[238] = c_str[237];
+			}
+			if( good == false ) {
+				if( c_str[238] == 0 ) {
+					str[0] = 238;
+					good = true;
+				} else str[239] = c_str[238];
+			}
+			if( good == false ) {
+				if( c_str[239] == 0 ) {
+					str[0] = 239;
+					good = true;
+				} else str[240] = c_str[239];
+			}
+			if( good == false ) {
+				if( c_str[240] == 0 ) {
+					str[0] = 240;
+					good = true;
+				} else str[241] = c_str[240];
+			}
+			if( good == false ) {
+				if( c_str[241] == 0 ) {
+					str[0] = 241;
+					good = true;
+				} else str[242] = c_str[241];
+			}
+			if( good == false ) {
+				if( c_str[242] == 0 ) {
+					str[0] = 242;
+					good = true;
+				} else str[243] = c_str[242];
+			}
+			if( good == false ) {
+				if( c_str[243] == 0 ) {
+					str[0] = 243;
+					good = true;
+				} else str[244] = c_str[243];
+			}
+			if( good == false ) {
+				if( c_str[244] == 0 ) {
+					str[0] = 244;
+					good = true;
+				} else str[245] = c_str[244];
+			}
+			if( good == false ) {
+				if( c_str[245] == 0 ) {
+					str[0] = 245;
+					good = true;
+				} else str[246] = c_str[245];
+			}
+			if( good == false ) {
+				if( c_str[246] == 0 ) {
+					str[0] = 246;
+					good = true;
+				} else str[247] = c_str[246];
+			}
+			if( good == false ) {
+				if( c_str[247] == 0 ) {
+					str[0] = 247;
+					good = true;
+				} else str[248] = c_str[247];
+			}
+			if( good == false ) {
+				if( c_str[248] == 0 ) {
+					str[0] = 248;
+					good = true;
+				} else str[249] = c_str[248];
+			}
+			if( good == false ) {
+				if( c_str[249] == 0 ) {
+					str[0] = 249;
+					good = true;
+				} else str[250] = c_str[249];
+			}
+			if( good == false ) {
+				if( c_str[250] == 0 ) {
+					str[0] = 250;
+					good = true;
+				} else str[251] = c_str[250];
+			}
+			if( good == false ) {
+				if( c_str[251] == 0 ) {
+					str[0] = 251;
+					good = true;
+				} else str[252] = c_str[251];
+			}
+			if( good == false ) {
+				if( c_str[252] == 0 ) {
+					str[0] = 252;
+					good = true;
+				} else str[253] = c_str[252];
+			}
+			if( good == false ) {
+				if( c_str[253] == 0 ) {
+					str[0] = 253;
+					good = true;
+				} else str[254] = c_str[253];
+			}
+			if( good == false ) {
+				if( c_str[254] == 0 ) {
+					str[0] = 254;
+					good = true;
+				} else str[255] = c_str[254];
+			}
+			if( good == false ) {
+				if( c_str[255] == 0 ) {
+					str[0] = 255;
+					good = true;
+				} else str[256] = c_str[255];
+			}
+
+			if( 1 <= *str ) putc( str[1], stdout );
+			if( 2 <= *str ) putc( str[2], stdout );
+			if( 3 <= *str ) putc( str[3], stdout );
+			if( 4 <= *str ) putc( str[4], stdout );
+			if( 5 <= *str ) putc( str[5], stdout );
+			if( 6 <= *str ) putc( str[6], stdout );
+			if( 7 <= *str ) putc( str[7], stdout );
+			if( 8 <= *str ) putc( str[8], stdout );
+			if( 9 <= *str ) putc( str[9], stdout );
+			if( 10 <= *str ) putc( str[10], stdout );
+			if( 11 <= *str ) putc( str[11], stdout );
+			if( 12 <= *str ) putc( str[12], stdout );
+			if( 13 <= *str ) putc( str[13], stdout );
+			if( 14 <= *str ) putc( str[14], stdout );
+			if( 15 <= *str ) putc( str[15], stdout );
+			if( 16 <= *str ) putc( str[16], stdout );
+			if( 17 <= *str ) putc( str[17], stdout );
+			if( 18 <= *str ) putc( str[18], stdout );
+			if( 19 <= *str ) putc( str[19], stdout );
+			if( 20 <= *str ) putc( str[20], stdout );
+			if( 21 <= *str ) putc( str[21], stdout );
+			if( 22 <= *str ) putc( str[22], stdout );
+			if( 23 <= *str ) putc( str[23], stdout );
+			if( 24 <= *str ) putc( str[24], stdout );
+			if( 25 <= *str ) putc( str[25], stdout );
+			if( 26 <= *str ) putc( str[26], stdout );
+			if( 27 <= *str ) putc( str[27], stdout );
+			if( 28 <= *str ) putc( str[28], stdout );
+			if( 29 <= *str ) putc( str[29], stdout );
+			if( 30 <= *str ) putc( str[30], stdout );
+			if( 31 <= *str ) putc( str[31], stdout );
+			if( 32 <= *str ) putc( str[32], stdout );
+			if( 33 <= *str ) putc( str[33], stdout );
+			if( 34 <= *str ) putc( str[34], stdout );
+			if( 35 <= *str ) putc( str[35], stdout );
+			if( 36 <= *str ) putc( str[36], stdout );
+			if( 37 <= *str ) putc( str[37], stdout );
+			if( 38 <= *str ) putc( str[38], stdout );
+			if( 39 <= *str ) putc( str[39], stdout );
+			if( 40 <= *str ) putc( str[40], stdout );
+			if( 41 <= *str ) putc( str[41], stdout );
+			if( 42 <= *str ) putc( str[42], stdout );
+			if( 43 <= *str ) putc( str[43], stdout );
+			if( 44 <= *str ) putc( str[44], stdout );
+			if( 45 <= *str ) putc( str[45], stdout );
+			if( 46 <= *str ) putc( str[46], stdout );
+			if( 47 <= *str ) putc( str[47], stdout );
+			if( 48 <= *str ) putc( str[48], stdout );
+			if( 49 <= *str ) putc( str[49], stdout );
+			if( 50 <= *str ) putc( str[50], stdout );
+			if( 51 <= *str ) putc( str[51], stdout );
+			if( 52 <= *str ) putc( str[52], stdout );
+			if( 53 <= *str ) putc( str[53], stdout );
+			if( 54 <= *str ) putc( str[54], stdout );
+			if( 55 <= *str ) putc( str[55], stdout );
+			if( 56 <= *str ) putc( str[56], stdout );
+			if( 57 <= *str ) putc( str[57], stdout );
+			if( 58 <= *str ) putc( str[58], stdout );
+			if( 59 <= *str ) putc( str[59], stdout );
+			if( 60 <= *str ) putc( str[60], stdout );
+			if( 61 <= *str ) putc( str[61], stdout );
+			if( 62 <= *str ) putc( str[62], stdout );
+			if( 63 <= *str ) putc( str[63], stdout );
+			if( 64 <= *str ) putc( str[64], stdout );
+			if( 65 <= *str ) putc( str[65], stdout );
+			if( 66 <= *str ) putc( str[66], stdout );
+			if( 67 <= *str ) putc( str[67], stdout );
+			if( 68 <= *str ) putc( str[68], stdout );
+			if( 69 <= *str ) putc( str[69], stdout );
+			if( 70 <= *str ) putc( str[70], stdout );
+			if( 71 <= *str ) putc( str[71], stdout );
+			if( 72 <= *str ) putc( str[72], stdout );
+			if( 73 <= *str ) putc( str[73], stdout );
+			if( 74 <= *str ) putc( str[74], stdout );
+			if( 75 <= *str ) putc( str[75], stdout );
+			if( 76 <= *str ) putc( str[76], stdout );
+			if( 77 <= *str ) putc( str[77], stdout );
+			if( 78 <= *str ) putc( str[78], stdout );
+			if( 79 <= *str ) putc( str[79], stdout );
+			if( 80 <= *str ) putc( str[80], stdout );
+			if( 81 <= *str ) putc( str[81], stdout );
+			if( 82 <= *str ) putc( str[82], stdout );
+			if( 83 <= *str ) putc( str[83], stdout );
+			if( 84 <= *str ) putc( str[84], stdout );
+			if( 85 <= *str ) putc( str[85], stdout );
+			if( 86 <= *str ) putc( str[86], stdout );
+			if( 87 <= *str ) putc( str[87], stdout );
+			if( 88 <= *str ) putc( str[88], stdout );
+			if( 89 <= *str ) putc( str[89], stdout );
+			if( 90 <= *str ) putc( str[90], stdout );
+			if( 91 <= *str ) putc( str[91], stdout );
+			if( 92 <= *str ) putc( str[92], stdout );
+			if( 93 <= *str ) putc( str[93], stdout );
+			if( 94 <= *str ) putc( str[94], stdout );
+			if( 95 <= *str ) putc( str[95], stdout );
+			if( 96 <= *str ) putc( str[96], stdout );
+			if( 97 <= *str ) putc( str[97], stdout );
+			if( 98 <= *str ) putc( str[98], stdout );
+			if( 99 <= *str ) putc( str[99], stdout );
+			if( 100 <= *str ) putc( str[100], stdout );
+			if( 101 <= *str ) putc( str[101], stdout );
+			if( 102 <= *str ) putc( str[102], stdout );
+			if( 103 <= *str ) putc( str[103], stdout );
+			if( 104 <= *str ) putc( str[104], stdout );
+			if( 105 <= *str ) putc( str[105], stdout );
+			if( 106 <= *str ) putc( str[106], stdout );
+			if( 107 <= *str ) putc( str[107], stdout );
+			if( 108 <= *str ) putc( str[108], stdout );
+			if( 109 <= *str ) putc( str[109], stdout );
+			if( 110 <= *str ) putc( str[110], stdout );
+			if( 111 <= *str ) putc( str[111], stdout );
+			if( 112 <= *str ) putc( str[112], stdout );
+			if( 113 <= *str ) putc( str[113], stdout );
+			if( 114 <= *str ) putc( str[114], stdout );
+			if( 115 <= *str ) putc( str[115], stdout );
+			if( 116 <= *str ) putc( str[116], stdout );
+			if( 117 <= *str ) putc( str[117], stdout );
+			if( 118 <= *str ) putc( str[118], stdout );
+			if( 119 <= *str ) putc( str[119], stdout );
+			if( 120 <= *str ) putc( str[120], stdout );
+			if( 121 <= *str ) putc( str[121], stdout );
+			if( 122 <= *str ) putc( str[122], stdout );
+			if( 123 <= *str ) putc( str[123], stdout );
+			if( 124 <= *str ) putc( str[124], stdout );
+			if( 125 <= *str ) putc( str[125], stdout );
+			if( 126 <= *str ) putc( str[126], stdout );
+			if( 127 <= *str ) putc( str[127], stdout );
+			if( 128 <= *str ) putc( str[128], stdout );
+			if( 129 <= *str ) putc( str[129], stdout );
+			if( 130 <= *str ) putc( str[130], stdout );
+			if( 131 <= *str ) putc( str[131], stdout );
+			if( 132 <= *str ) putc( str[132], stdout );
+			if( 133 <= *str ) putc( str[133], stdout );
+			if( 134 <= *str ) putc( str[134], stdout );
+			if( 135 <= *str ) putc( str[135], stdout );
+			if( 136 <= *str ) putc( str[136], stdout );
+			if( 137 <= *str ) putc( str[137], stdout );
+			if( 138 <= *str ) putc( str[138], stdout );
+			if( 139 <= *str ) putc( str[139], stdout );
+			if( 140 <= *str ) putc( str[140], stdout );
+			if( 141 <= *str ) putc( str[141], stdout );
+			if( 142 <= *str ) putc( str[142], stdout );
+			if( 143 <= *str ) putc( str[143], stdout );
+			if( 144 <= *str ) putc( str[144], stdout );
+			if( 145 <= *str ) putc( str[145], stdout );
+			if( 146 <= *str ) putc( str[146], stdout );
+			if( 147 <= *str ) putc( str[147], stdout );
+			if( 148 <= *str ) putc( str[148], stdout );
+			if( 149 <= *str ) putc( str[149], stdout );
+			if( 150 <= *str ) putc( str[150], stdout );
+			if( 151 <= *str ) putc( str[151], stdout );
+			if( 152 <= *str ) putc( str[152], stdout );
+			if( 153 <= *str ) putc( str[153], stdout );
+			if( 154 <= *str ) putc( str[154], stdout );
+			if( 155 <= *str ) putc( str[155], stdout );
+			if( 156 <= *str ) putc( str[156], stdout );
+			if( 157 <= *str ) putc( str[157], stdout );
+			if( 158 <= *str ) putc( str[158], stdout );
+			if( 159 <= *str ) putc( str[159], stdout );
+			if( 160 <= *str ) putc( str[160], stdout );
+			if( 161 <= *str ) putc( str[161], stdout );
+			if( 162 <= *str ) putc( str[162], stdout );
+			if( 163 <= *str ) putc( str[163], stdout );
+			if( 164 <= *str ) putc( str[164], stdout );
+			if( 165 <= *str ) putc( str[165], stdout );
+			if( 166 <= *str ) putc( str[166], stdout );
+			if( 167 <= *str ) putc( str[167], stdout );
+			if( 168 <= *str ) putc( str[168], stdout );
+			if( 169 <= *str ) putc( str[169], stdout );
+			if( 170 <= *str ) putc( str[170], stdout );
+			if( 171 <= *str ) putc( str[171], stdout );
+			if( 172 <= *str ) putc( str[172], stdout );
+			if( 173 <= *str ) putc( str[173], stdout );
+			if( 174 <= *str ) putc( str[174], stdout );
+			if( 175 <= *str ) putc( str[175], stdout );
+			if( 176 <= *str ) putc( str[176], stdout );
+			if( 177 <= *str ) putc( str[177], stdout );
+			if( 178 <= *str ) putc( str[178], stdout );
+			if( 179 <= *str ) putc( str[179], stdout );
+			if( 180 <= *str ) putc( str[180], stdout );
+			if( 181 <= *str ) putc( str[181], stdout );
+			if( 182 <= *str ) putc( str[182], stdout );
+			if( 183 <= *str ) putc( str[183], stdout );
+			if( 184 <= *str ) putc( str[184], stdout );
+			if( 185 <= *str ) putc( str[185], stdout );
+			if( 186 <= *str ) putc( str[186], stdout );
+			if( 187 <= *str ) putc( str[187], stdout );
+			if( 188 <= *str ) putc( str[188], stdout );
+			if( 189 <= *str ) putc( str[189], stdout );
+			if( 190 <= *str ) putc( str[190], stdout );
+			if( 191 <= *str ) putc( str[191], stdout );
+			if( 192 <= *str ) putc( str[192], stdout );
+			if( 193 <= *str ) putc( str[193], stdout );
+			if( 194 <= *str ) putc( str[194], stdout );
+			if( 195 <= *str ) putc( str[195], stdout );
+			if( 196 <= *str ) putc( str[196], stdout );
+			if( 197 <= *str ) putc( str[197], stdout );
+			if( 198 <= *str ) putc( str[198], stdout );
+			if( 199 <= *str ) putc( str[199], stdout );
+			if( 200 <= *str ) putc( str[200], stdout );
+			if( 201 <= *str ) putc( str[201], stdout );
+			if( 202 <= *str ) putc( str[202], stdout );
+			if( 203 <= *str ) putc( str[203], stdout );
+			if( 204 <= *str ) putc( str[204], stdout );
+			if( 205 <= *str ) putc( str[205], stdout );
+			if( 206 <= *str ) putc( str[206], stdout );
+			if( 207 <= *str ) putc( str[207], stdout );
+			if( 208 <= *str ) putc( str[208], stdout );
+			if( 209 <= *str ) putc( str[209], stdout );
+			if( 210 <= *str ) putc( str[210], stdout );
+			if( 211 <= *str ) putc( str[211], stdout );
+			if( 212 <= *str ) putc( str[212], stdout );
+			if( 213 <= *str ) putc( str[213], stdout );
+			if( 214 <= *str ) putc( str[214], stdout );
+			if( 215 <= *str ) putc( str[215], stdout );
+			if( 216 <= *str ) putc( str[216], stdout );
+			if( 217 <= *str ) putc( str[217], stdout );
+			if( 218 <= *str ) putc( str[218], stdout );
+			if( 219 <= *str ) putc( str[219], stdout );
+			if( 220 <= *str ) putc( str[220], stdout );
+			if( 221 <= *str ) putc( str[221], stdout );
+			if( 222 <= *str ) putc( str[222], stdout );
+			if( 223 <= *str ) putc( str[223], stdout );
+			if( 224 <= *str ) putc( str[224], stdout );
+			if( 225 <= *str ) putc( str[225], stdout );
+			if( 226 <= *str ) putc( str[226], stdout );
+			if( 227 <= *str ) putc( str[227], stdout );
+			if( 228 <= *str ) putc( str[228], stdout );
+			if( 229 <= *str ) putc( str[229], stdout );
+			if( 230 <= *str ) putc( str[230], stdout );
+			if( 231 <= *str ) putc( str[231], stdout );
+			if( 232 <= *str ) putc( str[232], stdout );
+			if( 233 <= *str ) putc( str[233], stdout );
+			if( 234 <= *str ) putc( str[234], stdout );
+			if( 235 <= *str ) putc( str[235], stdout );
+			if( 236 <= *str ) putc( str[236], stdout );
+			if( 237 <= *str ) putc( str[237], stdout );
+			if( 238 <= *str ) putc( str[238], stdout );
+			if( 239 <= *str ) putc( str[239], stdout );
+			if( 240 <= *str ) putc( str[240], stdout );
+			if( 241 <= *str ) putc( str[241], stdout );
+			if( 242 <= *str ) putc( str[242], stdout );
+			if( 243 <= *str ) putc( str[243], stdout );
+			if( 244 <= *str ) putc( str[244], stdout );
+			if( 245 <= *str ) putc( str[245], stdout );
+			if( 246 <= *str ) putc( str[246], stdout );
+			if( 247 <= *str ) putc( str[247], stdout );
+			if( 248 <= *str ) putc( str[248], stdout );
+			if( 249 <= *str ) putc( str[249], stdout );
+			if( 250 <= *str ) putc( str[250], stdout );
+			if( 251 <= *str ) putc( str[251], stdout );
+			if( 252 <= *str ) putc( str[252], stdout );
+			if( 253 <= *str ) putc( str[253], stdout );
+			if( 254 <= *str ) putc( str[254], stdout );
+			if( 255 <= *str ) putc( str[255], stdout );
 			
 			c = 0;
 			*filename = 0;
